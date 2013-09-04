@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>jQuery Hotspot Placement</title>
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/hotspot.js" type="text/javascript"></script>
+  </head>
+  <body>
+	<h1>jQuery Hotspot Placement</h1>
+	<p>This is a tool for placing hotspots on an image, meant to be used on the backend.</p>
+	<p>This is useful for catalogs, where you can place a hotspot on top of a product in the image (say in a kitchen or living room) and when the hotspot is clicked a modal will be displayed. Placing each hotspot manually is a pain, especially if there are more than a few catalog images and more than 5 products.</p>
+	<p>The style of this interface is based on the <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/">Django admin</a>. It uses <a href="http://jquery.com/">jQuery</a> and <a href="http://api.jqueryui.com/draggable/">the Draggable widget from jQuery UI</a>.</p>
+	<p>Copyright (C) 2013 Rudolf Olah omouse@gmail.com</p>
+	<p><a href="http://www.flickr.com/photos/telstar/2131982712/">Sears Christmas, 1962</a> (photo by Todd Lappin, licensed under the <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en_CA">Creative Commons Attribution-NonCommercial 2.0 Generic license</a>)</p>
+	<form>
+	  <div class="toolbar">
+		<input type="submit" value="Save" />
+	  </div>
+	  <div class="hotspots">
+		<div class="hotspot">
+		  <table>
+			<thead>
+			  <th><label for="hotspot-1-popup">Pop-up:</label></th>
+			  <th><label for="hotspot-1-x">X coordinate:</label></th>
+			  <th><label for="hotspot-1-y">Y coordinate:</label></th>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>
+				  <select id="hotspot-1-popup" name="hotspot-1-popup">
+					<option value="1">Hello World</option>
+					<option value="2">Useful Explanation</option>
+					<option value="3">Welcome Message</option>
+				  </select>
+				</td>
+				<td>
+				  <input id="hotspot-1-x" name="hotspot-1-x" value="" />
+				</td>
+				<td>
+				  <input id="hotspot-1-y" name="hotspot-1-y" value="" />
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+		</div>
+	  </div>
+	  <div class="hotspot-area">
+	  </div>
+	  <div class="toolbar">
+		<input type="submit" value="Save" />
+	  </div>
+	</form>
+  </body>
+</html>

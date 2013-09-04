@@ -1,0 +1,45 @@
+/* Copyright (C) 2013 Rudolf Olah <omouse@gmail.com> */
+/* Licensed under the GNU GPL version 3 or later */
+form {
+	background: #ddd;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+th {
+	text-align: left;
+}
+
+.toolbar {
+	padding: 5pt;
+	text-align: right;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+}
+
+.hotspot-area {
+	background: #fff;
+}
+
+.hotspot-area,
+.hotspot-image,
+.hotspot-marker {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.hotspot-image,
+.hotspot-marker {
+	position: absolute;
+}
+
+.hotspot-image {
+	padding: 5pt;
+	z-index: 0;
+}
+
+.hotspot-marker {
+	z-index: 10;
+}
